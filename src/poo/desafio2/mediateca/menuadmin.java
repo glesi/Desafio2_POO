@@ -27,6 +27,7 @@ public class menuadmin extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
@@ -66,25 +67,34 @@ public class menuadmin extends javax.swing.JInternalFrame {
         jMenuItem20 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Mediateca_Logos-removebg-preview.png"))); // NOI18N
+
         jMenu1.setText("Menu");
 
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/mas-35.png"))); // NOI18N
         jMenu3.setText("Agregar Material");
 
+        jMenu9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
         jMenu9.setText("Material Escrito");
 
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem1.setText("Libro");
         jMenu9.add(jMenuItem1);
 
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem2.setText("Revistas");
         jMenu9.add(jMenuItem2);
 
         jMenu3.add(jMenu9);
 
+        jMenu10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
         jMenu10.setText("Material Audiovisual");
 
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem3.setText("CD De Audio");
         jMenu10.add(jMenuItem3);
 
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem4.setText("DVD");
         jMenu10.add(jMenuItem4);
 
@@ -92,23 +102,30 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
         jMenu1.add(jMenu3);
 
+        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/pagina-35.png"))); // NOI18N
         jMenu4.setText("Modificar Material");
 
+        jMenu8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
         jMenu8.setText("Material Escrito");
 
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem5.setText("Libro");
         jMenu8.add(jMenuItem5);
 
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem6.setText("Revista");
         jMenu8.add(jMenuItem6);
 
         jMenu4.add(jMenu8);
 
+        jMenu11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
         jMenu11.setText("Material Audiovisual");
 
+        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem7.setText("CD de Audio");
         jMenu11.add(jMenuItem7);
 
+        jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem8.setText("DVD");
         jMenu11.add(jMenuItem8);
 
@@ -116,23 +133,30 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
         jMenu1.add(jMenu4);
 
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Materiales-35.png"))); // NOI18N
         jMenu5.setText("Listar Materiales Disponibles");
 
+        jMenu12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
         jMenu12.setText("Material Escrito");
 
+        jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem9.setText("Libro");
         jMenu12.add(jMenuItem9);
 
+        jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem10.setText("Revista");
         jMenu12.add(jMenuItem10);
 
         jMenu5.add(jMenu12);
 
+        jMenu13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
         jMenu13.setText("Material Audiovisual");
 
+        jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem11.setText("CD de Audio");
         jMenu13.add(jMenuItem11);
 
+        jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem12.setText("DVD");
         jMenu13.add(jMenuItem12);
 
@@ -140,13 +164,17 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
         jMenu1.add(jMenu5);
 
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/eliminar-35.png"))); // NOI18N
         jMenu6.setText("Borrar Materiales");
 
+        jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
         jMenu14.setText("Material Escrito");
 
+        jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem13.setText("Libro");
         jMenu14.add(jMenuItem13);
 
+        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem14.setText("Revista");
         jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,11 +185,14 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
         jMenu6.add(jMenu14);
 
+        jMenu15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
         jMenu15.setText("Material Audiovisual");
 
+        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem15.setText("CD de Audio");
         jMenu15.add(jMenuItem15);
 
+        jMenuItem16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem16.setText("DVD");
         jMenu15.add(jMenuItem16);
 
@@ -169,23 +200,30 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
         jMenu1.add(jMenu6);
 
+        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Lupa-35.png"))); // NOI18N
         jMenu7.setText("Buscar Material");
 
+        jMenu16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
         jMenu16.setText("Material Escrito");
 
+        jMenuItem17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem17.setText("Libro");
         jMenu16.add(jMenuItem17);
 
+        jMenuItem18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem18.setText("Revista");
         jMenu16.add(jMenuItem18);
 
         jMenu7.add(jMenu16);
 
+        jMenu17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
         jMenu17.setText("Material Audiovisual");
 
+        jMenuItem19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem19.setText("CD de Audio");
         jMenu17.add(jMenuItem19);
 
+        jMenuItem20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem20.setText("DVD");
         jMenu17.add(jMenuItem20);
 
@@ -204,11 +242,17 @@ public class menuadmin extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 780, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(226, 226, 226)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(239, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 442, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(418, Short.MAX_VALUE))
         );
 
         pack();
@@ -220,6 +264,7 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;

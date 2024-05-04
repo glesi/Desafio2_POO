@@ -11,21 +11,33 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="jMenu3">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/mediateca/Img/mas-35.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Agregar Material"/>
               </Properties>
               <SubComponents>
                 <Menu class="javax.swing.JMenu" name="jMenu9">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/Material-35.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Escrito"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/Libros-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Libro"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/revista-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Revistas"/>
                       </Properties>
                     </MenuItem>
@@ -33,16 +45,25 @@
                 </Menu>
                 <Menu class="javax.swing.JMenu" name="jMenu10">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/audiovisu.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Audiovisual"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/CD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="CD De Audio"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/DVD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="DVD"/>
                       </Properties>
                     </MenuItem>
@@ -52,21 +73,33 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu4">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/mediateca/Img/pagina-35.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Modificar Material"/>
               </Properties>
               <SubComponents>
                 <Menu class="javax.swing.JMenu" name="jMenu8">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/Material-35.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Escrito"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/Libros-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Libro"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/revista-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Revista"/>
                       </Properties>
                     </MenuItem>
@@ -74,16 +107,25 @@
                 </Menu>
                 <Menu class="javax.swing.JMenu" name="jMenu11">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/audiovisu.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Audiovisual"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/CD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="CD de Audio"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/DVD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="DVD"/>
                       </Properties>
                     </MenuItem>
@@ -93,21 +135,33 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu5">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/mediateca/Img/Materiales-35.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Listar Materiales Disponibles"/>
               </Properties>
               <SubComponents>
                 <Menu class="javax.swing.JMenu" name="jMenu12">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/Material-35.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Escrito"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/Libros-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Libro"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/revista-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Revista"/>
                       </Properties>
                     </MenuItem>
@@ -115,16 +169,25 @@
                 </Menu>
                 <Menu class="javax.swing.JMenu" name="jMenu13">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/audiovisu.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Audiovisual"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem11">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/CD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="CD de Audio"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem12">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/DVD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="DVD"/>
                       </Properties>
                     </MenuItem>
@@ -134,21 +197,33 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu6">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/mediateca/Img/eliminar-35.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Borrar Materiales"/>
               </Properties>
               <SubComponents>
                 <Menu class="javax.swing.JMenu" name="jMenu14">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/Material-35.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Escrito"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem13">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/Libros-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Libro"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem14">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/revista-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Revista"/>
                       </Properties>
                       <Events>
@@ -159,16 +234,25 @@
                 </Menu>
                 <Menu class="javax.swing.JMenu" name="jMenu15">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/audiovisu.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Audiovisual"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem15">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/CD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="CD de Audio"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem16">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/DVD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="DVD"/>
                       </Properties>
                     </MenuItem>
@@ -178,21 +262,33 @@
             </Menu>
             <Menu class="javax.swing.JMenu" name="jMenu7">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/mediateca/Img/Lupa-35.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Buscar Material"/>
               </Properties>
               <SubComponents>
                 <Menu class="javax.swing.JMenu" name="jMenu16">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/Material-35.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Escrito"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem17">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/Libros-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Libro"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem18">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/revista-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Revista"/>
                       </Properties>
                     </MenuItem>
@@ -200,16 +296,25 @@
                 </Menu>
                 <Menu class="javax.swing.JMenu" name="jMenu17">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/mediateca/Img/audiovisu.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Material Audiovisual"/>
                   </Properties>
                   <SubComponents>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem19">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/CD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="CD de Audio"/>
                       </Properties>
                     </MenuItem>
                     <MenuItem class="javax.swing.JMenuItem" name="jMenuItem20">
                       <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/mediateca/Img/DVD-35.png"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="DVD"/>
                       </Properties>
                     </MenuItem>
@@ -246,13 +351,30 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="780" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="226" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="315" max="-2" attributes="0"/>
+              <EmptySpace pref="239" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="442" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="111" max="-2" attributes="0"/>
+              <EmptySpace pref="418" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/mediateca/Img/Mediateca_Logos-removebg-preview.png"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
 </Form>
