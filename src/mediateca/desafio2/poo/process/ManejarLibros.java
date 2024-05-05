@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mediateca.desafio2.poo.interfaces;
+package mediateca.desafio2.poo.process;
+
+import mediateca.desafio2.poo.Libro;
 
 /**
  *
  * @author glesi
  */
-public interface IMaterial {
-    void mostrarDetalles();   
-    void agregarMaterial();
+public class ManejarLibros {
+    Libro libro = new Libro();
+    
+    public void test(){
+        
+    }
 }

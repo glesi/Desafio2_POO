@@ -148,6 +148,11 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem9.setText("Libro");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
         jMenu12.add(jMenuItem9);
 
         jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
@@ -276,12 +281,20 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
+        AgregarLibroForm agregarLibroForm = new AgregarLibroForm();
+        agregarLibroForm.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+        ListaLibrosDisponibles listarLibros = new ListaLibrosDisponibles();
+        listarLibros.setVisible(true);
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -80,6 +80,9 @@ public abstract class Material implements IMaterial {
         System.out.println("Tipo de material: " + tipoMaterial);
     }
     
+    @Override
+    public void agregarMaterial(){
     
+    }
 }
 

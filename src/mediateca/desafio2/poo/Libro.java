@@ -17,6 +17,8 @@ public class Libro extends MaterialEscrito {
     private String editorial;
     private String isbn;
     private int anioPublicacion;
+    
+    public Libro(){}
 
     // Constructores, getters y setters
     public Libro(int idLibros, String autor, int numeroPaginas, String editorial, String isbn, int anioPublicacion) {

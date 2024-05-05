@@ -20,7 +20,9 @@ public class ConexionDb {
 	private ResultSet rs;
 	private Statement stm;
 
-    public ConexionDb() throws SQLException {
+    public ConexionDb() {}
+    
+    public Connection obtenerConexion() throws SQLException {
     	try
     	{
             //cargar driver de MySQL
@@ -28,16 +30,16 @@ public class ConexionDb {
 
             // Se obtiene la conexión con la base de datos.
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/mediateca_db", "root", "");
-            
-            // permite ejecutar consultas SQL sin parametros
-            stm = conexion.createStatement();
 
             System.out.println("Conexión establecida con éxito.");
+            return conexion;
         } catch (ClassNotFoundException e) {
             System.out.println("ERROR: No se pudo cargar el controlador JDBC: " + e.getMessage());
         } catch (SQLException e) {
             System.out.println("ERROR: Fallo en SQL: " + e.getMessage());
         }
+        
+        return null;
     }
 
     //codigo para consultar datos

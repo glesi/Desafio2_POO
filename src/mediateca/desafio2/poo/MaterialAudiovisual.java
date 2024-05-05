@@ -19,8 +19,7 @@ public class MaterialAudiovisual extends Material {
     public MaterialAudiovisual(String genero, int idMateriales, String codigoIdentificacion, String titulo, TipoMaterial tipoMaterial, Estado estado) {
         super(idMateriales, codigoIdentificacion, titulo, tipoMaterial, estado);
         this.genero = genero;
-    }
-    
+    }  
 
     public String getGenero() {
         return genero;
@@ -28,12 +27,6 @@ public class MaterialAudiovisual extends Material {
 
     public void setGenero(String genero) {
         this.genero = genero;
-    }
-
-    @Override
-    public void mostrarDetalles() {
-        super.mostrarDetalles();
-        System.out.println("Género: " + genero);
     }
 
 }
