@@ -27,7 +27,7 @@ public class ConexionDb {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Se obtiene la conexión con la base de datos.
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/mediateca", "root", "");
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/mediateca_db", "root", "");
             
             // permite ejecutar consultas SQL sin parametros
             stm = conexion.createStatement();

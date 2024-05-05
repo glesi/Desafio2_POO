@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.desafio2.mediateca;
+package mediateca.desafio2.poo.process;
 
 /**
  *
  * @author Fab
  */
-public class menuadmin extends javax.swing.JInternalFrame {
+public class MenuAdmin extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form menuadmin
      */
-    public menuadmin() {
+    public MenuAdmin() {
         initComponents();
     }
 
@@ -81,6 +81,11 @@ public class menuadmin extends javax.swing.JInternalFrame {
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem1.setText("Libro");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu9.add(jMenuItem1);
 
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
@@ -236,6 +241,11 @@ public class menuadmin extends javax.swing.JInternalFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Salir");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -263,6 +273,15 @@ public class menuadmin extends javax.swing.JInternalFrame {
     private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem14ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jMenu2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
