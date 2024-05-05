@@ -67,6 +67,8 @@ public class menuadmin extends javax.swing.JInternalFrame {
         jMenuItem20 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
+        setBackground(new java.awt.Color(51, 153, 255));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Mediateca_Logos-removebg-preview.png"))); // NOI18N
 
         jMenu1.setText("Menu");
