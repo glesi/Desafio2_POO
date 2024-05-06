@@ -51,20 +51,6 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
         jMenu13 = new javax.swing.JMenu();
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem12 = new javax.swing.JMenuItem();
-        jMenu6 = new javax.swing.JMenu();
-        jMenu14 = new javax.swing.JMenu();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
-        jMenu15 = new javax.swing.JMenu();
-        jMenuItem15 = new javax.swing.JMenuItem();
-        jMenuItem16 = new javax.swing.JMenuItem();
-        jMenu7 = new javax.swing.JMenu();
-        jMenu16 = new javax.swing.JMenu();
-        jMenuItem17 = new javax.swing.JMenuItem();
-        jMenuItem18 = new javax.swing.JMenuItem();
-        jMenu17 = new javax.swing.JMenu();
-        jMenuItem19 = new javax.swing.JMenuItem();
-        jMenuItem20 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setBackground(new java.awt.Color(51, 153, 255));
@@ -90,6 +76,11 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem2.setText("Revistas");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu9.add(jMenuItem2);
 
         jMenu3.add(jMenu9);
@@ -99,10 +90,20 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem3.setText("CD De Audio");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu10.add(jMenuItem3);
 
         jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem4.setText("DVD");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu10.add(jMenuItem4);
 
         jMenu3.add(jMenu10);
@@ -117,10 +118,20 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
         jMenuItem5.setText("Libro");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu8.add(jMenuItem5);
 
         jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem6.setText("Revista");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu8.add(jMenuItem6);
 
         jMenu4.add(jMenu8);
@@ -130,10 +141,20 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem7.setText("CD de Audio");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
         jMenu11.add(jMenuItem7);
 
         jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem8.setText("DVD");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
         jMenu11.add(jMenuItem8);
 
         jMenu4.add(jMenu11);
@@ -157,6 +178,11 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
         jMenuItem10.setText("Revista");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
         jMenu12.add(jMenuItem10);
 
         jMenu5.add(jMenu12);
@@ -166,82 +192,25 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
 
         jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
         jMenuItem11.setText("CD de Audio");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu13.add(jMenuItem11);
 
         jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
         jMenuItem12.setText("DVD");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
         jMenu13.add(jMenuItem12);
 
         jMenu5.add(jMenu13);
 
         jMenu1.add(jMenu5);
-
-        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/eliminar-35.png"))); // NOI18N
-        jMenu6.setText("Borrar Materiales");
-
-        jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
-        jMenu14.setText("Material Escrito");
-
-        jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
-        jMenuItem13.setText("Libro");
-        jMenu14.add(jMenuItem13);
-
-        jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
-        jMenuItem14.setText("Revista");
-        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem14ActionPerformed(evt);
-            }
-        });
-        jMenu14.add(jMenuItem14);
-
-        jMenu6.add(jMenu14);
-
-        jMenu15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
-        jMenu15.setText("Material Audiovisual");
-
-        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
-        jMenuItem15.setText("CD de Audio");
-        jMenu15.add(jMenuItem15);
-
-        jMenuItem16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
-        jMenuItem16.setText("DVD");
-        jMenu15.add(jMenuItem16);
-
-        jMenu6.add(jMenu15);
-
-        jMenu1.add(jMenu6);
-
-        jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Lupa-35.png"))); // NOI18N
-        jMenu7.setText("Buscar Material");
-
-        jMenu16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Material-35.png"))); // NOI18N
-        jMenu16.setText("Material Escrito");
-
-        jMenuItem17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/Libros-35.png"))); // NOI18N
-        jMenuItem17.setText("Libro");
-        jMenu16.add(jMenuItem17);
-
-        jMenuItem18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/revista-35.png"))); // NOI18N
-        jMenuItem18.setText("Revista");
-        jMenu16.add(jMenuItem18);
-
-        jMenu7.add(jMenu16);
-
-        jMenu17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/audiovisu.png"))); // NOI18N
-        jMenu17.setText("Material Audiovisual");
-
-        jMenuItem19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/CD-35.png"))); // NOI18N
-        jMenuItem19.setText("CD de Audio");
-        jMenu17.add(jMenuItem19);
-
-        jMenuItem20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mediateca/Img/DVD-35.png"))); // NOI18N
-        jMenuItem20.setText("DVD");
-        jMenu17.add(jMenuItem20);
-
-        jMenu7.add(jMenu17);
-
-        jMenu1.add(jMenu7);
 
         jMenuBar1.add(jMenu1);
 
@@ -275,26 +244,82 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem14ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        // TODO add your handling code here:
+        ListarDvdDisponibles litarDvd = new ListarDvdDisponibles();
+        litarDvd.setVisible(true);
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        // TODO add your handling code here:
+        ListarCdAudioDisponibles listarCdAudio = new ListarCdAudioDisponibles();
+        listarCdAudio.setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        // TODO add your handling code here:
+        ListarRevistasDisponibles listarRevistas = new ListarRevistasDisponibles();
+        listarRevistas.setVisible(true);
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        // TODO add your handling code here:
+        ListarLibrosDisponibles listarLibros = new ListarLibrosDisponibles();
+        listarLibros.setVisible(true);
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        // TODO add your handling code here:
+        ModificarDvdForm modificarDvd = new ModificarDvdForm();
+        modificarDvd.setVisible(true);
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        // TODO add your handling code here:
+        ModificarCdAudioForm modificarCd = new ModificarCdAudioForm();
+        modificarCd.setVisible(true);
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        // TODO add your handling code here:
+        ModificarRevistaForm modificarRevista = new ModificarRevistaForm();
+        modificarRevista.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        ModificarLibroForm modificarLibro = new ModificarLibroForm();
+        modificarLibro.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        AgregarDvdForm agregarDvd = new AgregarDvdForm();
+        agregarDvd.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        AgregarCdAudioForm cdAudioForm = new AgregarCdAudioForm();
+        cdAudioForm.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        AgregarRevistaForm agregarRevista = new AgregarRevistaForm();
+        agregarRevista.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
         AgregarLibroForm agregarLibroForm = new AgregarLibroForm();
         agregarLibroForm.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jMenu2ActionPerformed
-
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
-        // TODO add your handling code here:
-        ListaLibrosDisponibles listarLibros = new ListaLibrosDisponibles();
-        listarLibros.setVisible(true);
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -304,16 +329,10 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
-    private javax.swing.JMenu jMenu14;
-    private javax.swing.JMenu jMenu15;
-    private javax.swing.JMenu jMenu16;
-    private javax.swing.JMenu jMenu17;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
@@ -321,15 +340,7 @@ public class MenuAdmin extends javax.swing.JInternalFrame {
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
-    private javax.swing.JMenuItem jMenuItem16;
-    private javax.swing.JMenuItem jMenuItem17;
-    private javax.swing.JMenuItem jMenuItem18;
-    private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;

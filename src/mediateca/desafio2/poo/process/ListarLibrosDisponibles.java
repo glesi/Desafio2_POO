@@ -18,10 +18,10 @@ import mediateca.desafio2.poo.db.ConexionDb;
  *
  * @author glesi
  */
-public class ListaLibrosDisponibles extends JFrame {
+public class ListarLibrosDisponibles extends JFrame {
     private JTable tablaLibros;
 
-    public ListaLibrosDisponibles() {
+    public ListarLibrosDisponibles() {
         super("Lista de Libros Disponibles");
         setSize(800, 400);
         setLocationRelativeTo(null);
@@ -47,31 +47,30 @@ public class ListaLibrosDisponibles extends JFrame {
 
         try {
             ConexionDb objConexion = new ConexionDb();
-            Connection conexion = objConexion.obtenerConexion();
-
-            String sql = "SELECT m.codigo_identificacion, m.titulo, l.autor, l.numero_paginas, l.editorial, l.isbn, l.anio_publicacion " +
-                         "FROM materiales m " +
-                         "JOIN libros l ON m.id_materiales = l.id_materiales " +
-                         "WHERE m.estado = 'Disponible'";
-            PreparedStatement statement = conexion.prepareStatement(sql);
-            ResultSet resultSet = statement.executeQuery();
-
-            while (resultSet.next()) {
-                Object[] fila = {
-                    resultSet.getString("codigo_identificacion"),
-                    resultSet.getString("titulo"),
-                    resultSet.getString("autor"),
-                    resultSet.getInt("numero_paginas"),
-                    resultSet.getString("editorial"),
-                    resultSet.getString("isbn"),
-                    resultSet.getInt("anio_publicacion")
-                };
-                model.addRow(fila);
+            try (Connection conexion = objConexion.obtenerConexion()) {
+                String sql = "SELECT m.codigo_identificacion, m.titulo, l.autor, l.numero_paginas, l.editorial, l.isbn, l.anio_publicacion " +
+                        "FROM materiales m " +
+                        "JOIN libros l ON m.id_materiales = l.id_materiales " +
+                        "WHERE m.estado = 'Disponible'";
+                PreparedStatement statement = conexion.prepareStatement(sql);
+                ResultSet resultSet = statement.executeQuery();
+                
+                while (resultSet.next()) {
+                    Object[] fila = {
+                        resultSet.getString("codigo_identificacion"),
+                        resultSet.getString("titulo"),
+                        resultSet.getString("autor"),
+                        resultSet.getInt("numero_paginas"),
+                        resultSet.getString("editorial"),
+                        resultSet.getString("isbn"),
+                        resultSet.getInt("anio_publicacion")
+                    };
+                    model.addRow(fila);
+                }
+                
+                resultSet.close();
+                statement.close();
             }
-
-            resultSet.close();
-            statement.close();
-            conexion.close();
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, "Error al cargar los libros: " + ex.getMessage());
         }
@@ -81,7 +80,7 @@ public class ListaLibrosDisponibles extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            ListaLibrosDisponibles ventana = new ListaLibrosDisponibles();
+            ListarLibrosDisponibles ventana = new ListarLibrosDisponibles();
             ventana.setVisible(true);
         });
     }

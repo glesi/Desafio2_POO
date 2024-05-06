@@ -9,13 +9,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import mediateca.desafio2.poo.db.ConexionDb;
-import mediateca.desafio2.poo.util.Util;
+import mediateca.desafio2.poo.Libro;
 
 /**
  *
@@ -87,58 +82,23 @@ public class AgregarLibroForm extends JFrame {
     }
 
     private void agregarLibro() {
-        String titulo = txtTitulo.getText();
-        int unidades = Integer.parseInt(txtUnidadesDisponible.getText());
-        String autor = txtAutor.getText();
-        int paginas = Integer.parseInt(txtPaginas.getText());
-        String editorial = txtEditorial.getText();
-        String isbn = txtISBN.getText();
-        int anio = Integer.parseInt(txtAnio.getText());
 
         try {
-            ConexionDb objConexion = new ConexionDb();
-            Connection conexion;
-            conexion = objConexion.obtenerConexion();
+            Libro libro = new Libro();
+            libro.setTitulo(txtTitulo.getText());
+            libro.setUnidadesDisponibles(Integer.parseInt(txtUnidadesDisponible.getText()));
+            libro.setAutor(txtAutor.getText());
+            libro.setNumeroPaginas(Integer.parseInt(txtPaginas.getText()));
+            libro.setEditorial(txtEditorial.getText());
+            libro.setIsbn(txtISBN.getText());
+            libro.setAnioPublicacion(Integer.parseInt(txtAnio.getText()));
             
-            String codigoLibro = Util.generarCodigoLibro("LIB");
-            
-            if(codigoLibro == null) throw new SQLException("No fue posible generar el codigo unico de material.");
-            
-            System.out.println("Codigo generado: "+codigoLibro);
-            
-            String sql = "INSERT INTO materiales (codigo_identificacion, titulo, tipo_material, estado, unidades_disponibles) VALUES (?, ?, ?, 'Disponible', ?)";
-            PreparedStatement statement = conexion.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            statement.setString(1, codigoLibro);
-            statement.setString(2, titulo);
-            statement.setString(3, "ESCRITO");
-            statement.setInt(4, unidades);
-            
-            statement.executeUpdate();
-
-            int idMaterial;
-            ResultSet rs = statement.getGeneratedKeys();
-            if (rs.next()) {
-                idMaterial = rs.getInt(1);
+            if(ManejarLibros.agregarLibto(libro)){
+                JOptionPane.showMessageDialog(this, "Libro agregado correctamente.");
+                limpiarCampos();
             } else {
-                throw new SQLException("No se pudo obtener el ID del material insertado");
-            }
-
-            sql = "INSERT INTO libros (id_materiales, autor, numero_paginas, editorial, isbn, anio_publicacion) VALUES (?, ?, ?, ?, ?, ?)";
-            statement = conexion.prepareStatement(sql);
-            statement.setInt(1, idMaterial);
-            statement.setString(2, autor);
-            statement.setInt(3, paginas);
-            statement.setString(4, editorial);
-            statement.setString(5, isbn);
-            statement.setInt(6, anio);
-            
-            statement.executeUpdate();
-
-            statement.close();
-            conexion.close();
-            
-            JOptionPane.showMessageDialog(this, "Libro agregado correctamente.");
-            limpiarCampos();
+                JOptionPane.showMessageDialog(this, "Error al agregar el libro");
+            }          
         } catch (SQLException ex) {
             System.out.println("Error al agregar el libro: " + ex.getMessage());
             JOptionPane.showMessageDialog(this, "Error al agregar el libro: " + ex.getMessage());
